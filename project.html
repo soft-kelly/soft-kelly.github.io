@@ -10,9 +10,9 @@
 <nav><center>
 <a href="index.html">HOME</a> 
 <a href="resume.html">RESUME</a> 
-<a href="/js/">PROJECT</a> 
-<a href="/jquery/">CONTACT</a>
-<a href="/jquery/">PERSONAL</a>
+<a href="project.html">PROJECT</a> 
+<a href="contact.html">CONTACT</a>
+<a href="personal.html">PERSONAL</a>
 </center>
 </nav>
 </header>
@@ -32,20 +32,35 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     
       <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-thumbs-up fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>TOP THREE</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Escape Maze</b></h5>
-          <h6 class="w3-text-teal">Java, GUI, BST, DST, individual</h6>
-          <p>​Given the start and exit positions, I translated the maze into 2D array, and solved the maze by Breadth First Search and Depth First Search. The output in console would change to "Solve the maze" after reaching the exit point. "S" stands for start, "E" sthand for "exit", and "o" means "explored", "." means current path. After solving the maze, the current path would change from "." to "x".
-          </p>
+          
+          <!-- Left Column -->
+          <div class="w3-third">
           <center>
           <video width="200" controls>
             <source src="maze.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
           </video>
           </center>
-          <hr>
+          <!-- End Left Column -->
+          </div>
+
+          <!-- Right Column -->
+          <div class="w3-twothird">
+          <div class="w3-container">
+          <center><h5 class="w3-opacity"><b>Escape Maze</b></h5>
+          <h6 class="w3-text-teal">Java, GUI, BST, DST, individual</h6></center>
+          <ul>
+          <li>​Given the start and exit positions, I translated the maze into 2D array, and solved the maze by Breadth First Search and Depth First Search.</li> 
+          <li>The output in console would change to "Solve the maze" after reaching the exit point. "S" stands for start, "E" sthand for "exit", and "o" means "explored", "." means current path. After solving the maze, the current path would change from "." to "x".</li>
+          <li>If the program cannot find the exit path, the output would stay as "Maze is unsolved".</li>
+          <li>DST is faster.</li>
+          </ul>
+          </p>
+          <!-- End Right Column -->
+          </div>
         </div>
         <div class="w3-container">
+        <hr>
           <h5 class="w3-opacity"><b>Spell Checker</b></h5>
           <h6 class="w3-text-teal">Java, hash table, individual</h6>
           <p>Created a dictionary by hash table, based on the user input words are whether in the dictionary or not, the output would be "your word is in the dictinoary" or reasonable guesses what user really wants to spell. For example, if the user inputs "pol", output would be "not found pol, you may mean pal, pod, pop, pot, pox, pool, poll, pole, polo".
@@ -61,23 +76,107 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
       </div>
 
       <div class="w3-container w3-card-2 w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>projects in 2016-2017 school year</h2>
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-hand-o-right fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>projects in 2016-2017 school year</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Rider Game</b></h5>
-           <h6 class="w3-text-teal"> Java, GUI, pair programming</h6>
-          <p>Player car would fight against robot cars to pick up the rider. All the robot cars may follow different controllers.
-           </p><br>
-           <img src="cse11.jpg">
+
+          <!-- Left Column -->
+          <div class="w3-third">
+          <center>
+          <img src="cse11.jpg" style="width:300px;height:300px;">
+          </center>
+          <!-- End Left Column -->
+          </div>
+
+          <!-- Right Column -->
+          <div class="w3-twothird">
+          <div class="w3-container">
+          <center><h5 class="w3-opacity"><b>Rider Game</b></h5>
+           <h6 class="w3-text-teal"> Java, GUI, pair programming</h6></center>
+           <ul>
+          <li>​Player car(red triangle) would fight against robot cars(blue triangle) to pick up the rider(yellow square) without going through obstacles(black square).</li>
+          <li>I set several controllers to control robot cars' direction, such as east/north first, diagonal first</li>
+          <li>The new rider would show up at the random free grid after the last rider was  picked up. Free means no car, no obstacle.</li>
+          <li>Player can change the robot car speed by the right bottom corner slide to change the level of difficulty of this game.</li>
+          <li>The title kept records for how many riders were picked up by the user and by the robots</li>
+           </ul>
+           </div>
+           <!-- End Right Column -->
         </div>
-        <hr>
+        </div>
+
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Scraping data off of Billboard Hot 100</b></h5>
-           <h6 class="w3-text-teal">Python, BeautifulSoup, individual</h6>
-          <p>Scanned the webpage, collected the top 10 songs with their artists, and printed them out to the console.
-           </p><br>
-        </div>
         <hr>
+        <!-- Left Column -->
+          <div class="w3-third">
+          <center>
+          <img src="tetris.jpg" style="width:300px;height:300px;">
+          </center>
+          <!-- End Left Column -->
+          </div>
+          <!-- Right Column -->
+          <div class="w3-twothird">
+          <div class="w3-container">
+          <center><h5 class="w3-opacity"><b>Tetris</b></h5>
+           <h6 class="w3-text-teal"> Java, GUI, individual</h6></center>
+           <ul>
+          <li>​Player can forsee the next figure by the right small screen.</li>
+          <li>The objective of the game is to manipulate these Tetriminos, by moving each one sideways (if the player feels the need) and rotating it by 90 degree units, with the aim of creating a horizontal line of ten units without gaps. When such a line is created, it disappears, and any block above the deleted line will fall. When a certain number of lines are cleared, the game enters a new level. As the game progresses, each level causes the Tetriminos to fall faster, and the game ends when the stack of Tetriminos reaches the top of the playing field and no new Tetriminos are able to enter. </li>
+          <li>The max level is 11.</li>
+          </ul>
+           </div>
+           <!-- End Right Column -->
+        </div>
       </div>
+
+        <hr>
+        <!-- Left Column -->
+          <div class="w3-third">
+          <center>
+          <img src="ece1.jpg" style="width:300px;height:300px;">
+          </center>
+          <!-- End Left Column -->
+          </div>
+          <!-- Right Column -->
+          <div class="w3-twothird">
+          <div class="w3-container">
+          <center><h5 class="w3-opacity"><b>Connect 4 Game</b></h5>
+           <h6 class="w3-text-teal"> C, individual</h6></center>
+           <ul>
+          <li>​The objective of the game is to be the first to form a horizontal, vertical, or diagonal line of four of one's own discs.</li>
+          <li>Player can choose to make the first('X') or second move('O').</li>
+          <li>The valid input is only from 1 to 7(inclusive). Also user cannot choose a full column.</li>
+          <li>If the program detect any three connected stone, it would block user's stone or connect to the fourth stone to win the game. Else, it would choose a random unfull column.</li>
+          </ul>
+           </div>
+           <!-- End Right Column -->
+        </div>
+
+        <div class="w3-container">
+        <hr>
+        <!-- Left Column -->
+          <div class="w3-third">
+          <center>
+          <a href="http://stuartcollection.ucsd.edu/artist/suh.html"><img src="fallenStar.jpg" style="width:200px;height:200px;"></a>
+          </center>
+          <!-- End Left Column -->
+          </div>
+          <!-- Right Column -->
+          <div class="w3-twothird">
+          <div class="w3-container">
+          <center><h5 class="w3-opacity"><b>Fallen Star</b></h5>
+           <h6 class="w3-text-teal"> 3D Printing, SolidWorks, individual</h6></center>
+           <ul>
+          <li>​Designed in SolidWorks. </li>
+          <li>Inspired by the Fallen Star at an angle off the edge of the main Jacobs School of Engineering building.</li>
+          <li>You can click the picture for more information on the fallen star in ucsd</li>
+          </ul>
+           </div>
+           <!-- End Right Column -->
+        </div>
+      </div>
+
+      
+
     </div>
     
   <!-- End Grid -->
