@@ -13,6 +13,7 @@
 <a href="project.html">PROJECT</a> 
 <a href="contact.html">CONTACT</a>
 <a href="personal.html">PERSONAL</a>
+<a href="games.html">GAMES</a>
 </center>
 </nav>
 </header>
@@ -93,11 +94,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <center><h5 class="w3-opacity"><b>Rider Game</b></h5>
            <h6 class="w3-text-teal"> Java, GUI, pair programming</h6></center>
            <ul>
-          <li>​Player car(red triangle) would fight against robot cars(blue triangle) to pick up the rider(yellow square) without going through obstacles(black square).</li>
+          <li>​User-controlled car(red triangle) plays against a number of computer-controlled cars(blue triangle), in picking up the rider(yellow square) and bringing them to the destination without going through obstacles(black square).</li>
           <li>I set several controllers to control robot cars' direction, such as east/north first, diagonal first</li>
-          <li>The new rider would show up at the random free grid after the last rider was  picked up. Free means no car, no obstacle.</li>
-          <li>Player can change the robot car speed by the right bottom corner slide to change the level of difficulty of this game.</li>
-          <li>The title kept records for how many riders were picked up by the user and by the robots</li>
+          <li>The new rider would show up at the random free grid after the last rider arrived at the destination. Free means no car, no obstacle.</li>
+          <li>Player can change the robot cars' speed by slide in right bottom corner or space on keyboard.</li>
+          <li>The headline would keep records for how many riders were picked up by the user and by the robots.</li>
            </ul>
            </div>
            <!-- End Right Column -->
@@ -109,7 +110,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <!-- Left Column -->
           <div class="w3-third">
           <center>
-          <img src="tetris.jpg" style="width:300px;height:300px;">
+           <video width="200" controls>
+            <source src="tetris.mp4" type="video/mp4">
+          </video>
           </center>
           <!-- End Left Column -->
           </div>
@@ -121,7 +124,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
            <ul>
           <li>​Player can forsee the next figure by the right small screen.</li>
           <li>The objective of the game is to manipulate these Tetriminos, by moving each one sideways (if the player feels the need) and rotating it by 90 degree units, with the aim of creating a horizontal line of ten units without gaps. When such a line is created, it disappears, and any block above the deleted line will fall. When a certain number of lines are cleared, the game enters a new level. As the game progresses, each level causes the Tetriminos to fall faster, and the game ends when the stack of Tetriminos reaches the top of the playing field and no new Tetriminos are able to enter. </li>
-          <li>The max level is 11.</li>
+          <li>Level would increase automatically after move every 20 lines. The max level is 11.</li>
           </ul>
            </div>
            <!-- End Right Column -->
